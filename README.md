@@ -90,3 +90,8 @@ Open `redis-cli` in Terminal [Redis Insight](https://redislabs.com/redisinsight/
 ```
 
 You should see some notifications poping up in the Vue application.
+
+## References
+
+1. [How to Create Notification Services with Redis, Websockets, and Vue.js](https://redis.com/blog/how-to-create-notification-services-with-redis-websockets-and-vue-js/)
+2. [Build a notification service with Redis, Web Sockets and Vue.js](https://youtu.be/TFoDRszO36w)
