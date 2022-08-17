@@ -5,7 +5,7 @@ This small project allow you to push notificatio in a Vue application from a Red
 ![notification-demo](https://user-images.githubusercontent.com/541250/80476373-96def200-894a-11ea-88f3-f69f8decc88e.gif)
 
 
-## Run the application
+## Run the Application
 
 ### Install Redis
 
