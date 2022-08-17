@@ -49,7 +49,7 @@ brew services start redis
 
 ---
 
-### Run the WebSocket Server**
+### Run the WebSocket Server
 
 You can change the HTTP Port and the Redis connection string in the `./notif-server/server.js`.
 
@@ -64,7 +64,7 @@ You can change the HTTP Port and the Redis connection string in the `./notif-ser
 
 ---
 
-### Run the Vue Web Front application**
+### Run the Vue Web Front application
 
 ```
 > cd ./web-client
@@ -78,7 +78,7 @@ Open your browser to http://localhost:8080
 
 ---
 
-### Push notifications to the application**
+### Push notifications to the application
 
 Open `redis-cli` in Terminal [Redis Insight](https://redislabs.com/redisinsight/) and publish messages on the `app:notifications` channel.
 
