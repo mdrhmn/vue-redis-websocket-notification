@@ -175,6 +175,8 @@ You can change the HTTP Port and the Redis connection string in the `./notif-ser
 
 Open your browser to http://localhost:8080
 
+---
+
 ### Push notifications to the application
 
 Unlike local Redis server connection, `redis-cli` doesn’t work with SSL connections. There are 3 ways to use `redis-cli` for Azure Redis server:
