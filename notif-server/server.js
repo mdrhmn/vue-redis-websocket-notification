@@ -1,6 +1,7 @@
 const WebSocket = require('ws');
 const redis = require('redis');
 const WEB_SOCKET_PORT = 3000;
+const CHANNEL_NAME = "app:notifications";
 
 // METHOD 1: Using local Redis server
 // Configuration: adapt to your environment
@@ -24,8 +25,8 @@ var redisClient = redis.createClient({
 
 /* -------------------------------------------------------------------------- */
 
-// Subscribe to "app:notifications" channel
-redisClient.subscribe('app:notifications');
+// Subscribe to channel
+redisClient.subscribe(CHANNEL_NAME);
 
 // Create & Start the WebSocket server
 const server = new WebSocket.Server({ port: WEB_SOCKET_PORT });
