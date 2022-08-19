@@ -92,9 +92,9 @@ Open `redis-cli` in Terminal [Redis Insight](https://redislabs.com/redisinsight/
 You should see some notifications poping up in the Vue application.
 
 
-## Run the Application using Azure Redis
+## Run the Application using Azure Cache for Redis
 
-### Create an Azure Redis cache instance
+### Create an Azure Cache for Redis cache instance
 
 Refer to this [official Microsoft documentation](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-nodejs-get-started)
 
@@ -122,14 +122,14 @@ export REDISCACHEKEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ---
 
-### Connect to Azure Redis server
+### Connect to Azure Cache for Redis server
 
 Amend the Redis client connection in the `notif-server/server.js` file:
 
 ```javascript
 // notif-server/server.js
 
-// METHOD 2: Using Azure Redis server
+// METHOD 2: Using Azure Cache for Redis server
 // Connect to the Azure Cache for Redis over the TLS port using the key.
 var cacheHostName = process.env.REDISCACHEHOSTNAME;
 var cachePassword = process.env.REDISCACHEKEY;
@@ -179,7 +179,7 @@ Open your browser to http://localhost:8080
 
 ### Push notifications to the application
 
-Unlike local Redis server connection, `redis-cli` doesn’t work with SSL connections. There are 3 ways to use `redis-cli` for Azure Redis server:
+Unlike local Redis server connection, `redis-cli` doesn’t work with SSL connections. There are 3 ways to use `redis-cli` for Azure Cache for Redis server:
 
 1. Disable SSL-only configuration (not recommended due to security concerns)
 

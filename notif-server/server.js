@@ -11,7 +11,7 @@ const WEB_SOCKET_PORT = 3000;
 
 /* -------------------------------------------------------------------------- */
 
-// METHOD 2: Using Azure Redis server
+// METHOD 2: Using Azure Cache for Redis server
 // Connect to the Azure Cache for Redis over the TLS port using the key.
 var cacheHostName = process.env.REDISCACHEHOSTNAME;
 var cachePassword = process.env.REDISCACHEKEY;
