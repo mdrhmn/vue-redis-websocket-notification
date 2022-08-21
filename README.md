@@ -1,5 +1,10 @@
 # Push Notification using Vue.js, Redis and WebSocket
 
+This small project allow you to push notification in a Vue application from a Redis `PUBLISH` using WebSockets.
+
+![notification-demo](https://user-images.githubusercontent.com/541250/80476373-96def200-894a-11ea-88f3-f69f8decc88e.gif)
+
+
 - [Push Notification using Vue.js, Redis and WebSocket](#push-notification-using-vuejs-redis-and-websocket)
   - [Run the Application using Local Redis Server](#run-the-application-using-local-redis-server)
     - [Install Redis](#install-redis)
@@ -16,11 +21,7 @@
     - [Run the Vue Web-pub application](#run-the-vue-web-pub-application)
     - [Push notifications to the application](#push-notifications-to-the-application-1)
   - [References](#references)
-
-This small project allow you to push notificatio in a Vue application from a Redis `PUBLISH` using WebSockets.
-
-![notification-demo](https://user-images.githubusercontent.com/541250/80476373-96def200-894a-11ea-88f3-f69f8decc88e.gif)
-
+  
 ## Run the Application using Local Redis Server
 
 ### Install Redis
