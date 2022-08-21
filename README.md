@@ -176,7 +176,19 @@ You can change the HTTP Port and the Redis connection string in the `./notif-ser
 Open your browser to http://localhost:8080
 
 ---
+### Run the Vue Web-pub application
 
+```
+> cd ./web-pub
+
+> npm install
+
+> npm start
+```
+
+Send GET request to http://localhost:3015
+
+---
 ### Push notifications to the application
 
 Unlike local Redis server connection, `redis-cli` doesn’t work with SSL connections. There are 3 ways to use `redis-cli` for Azure Cache for Redis server:
@@ -209,3 +221,4 @@ Unlike local Redis server connection, `redis-cli` doesn’t work with SSL connec
 3. [Quickstart: Use Azure Cache for Redis in Node.js](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-nodejs-get-started)
 4. [Use the Redis command-line tool with Azure Cache for Redis](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-redis-cli-tool)
 5. [Connecting to Azure Cache (Redis) with redis-cli and stunnel](https://medium.com/@therealjordanlee/connecting-to-azure-cache-redis-with-redis-cli-and-stunnel-6e5c5479bc2c)
+6. [Implementing Redis Pub/Sub in Node.js Application](https://cloudnweb.dev/2019/08/implementing-redis-pub-sub-in-node-js-application/)
